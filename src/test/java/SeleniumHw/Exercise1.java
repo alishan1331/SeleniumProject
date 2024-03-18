@@ -24,7 +24,8 @@ public class Exercise1 extends Hooks {
 
 		passwordField.sendKeys("Ntk-orange!admin.123");
 
-		WebElement loginField = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"));
+		WebElement loginField = driver
+				.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"));
 		Thread.sleep(2000);
 
 		loginField.click();

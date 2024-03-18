@@ -60,15 +60,14 @@ public class Exercise6 extends Hooks {
 		displayAlertBox.click();
 
 		Alert alerts = driver.switchTo().alert();
-		String alertbx = displayAlertBox.getText();
-		if (alertbx.contains("Press a Button !")) {
+		String alertbx = alerts.getText();
+		if (alertbx.equals("Press a Button !")) {
 			alerts.dismiss();
 		} else {
 			alerts.accept();
 		}
-
+			alerts.getText();
 		Thread.sleep(2000);
-
 		tearDown();
 	}
 

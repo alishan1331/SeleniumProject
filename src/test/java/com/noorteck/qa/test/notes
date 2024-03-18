@@ -1,0 +1,47 @@
+	@FindBy(xpath = "//strong[normalize-space()='Your Personal Details']")
+	WebElement personalDetails;
+	
+	@FindBy(id = "gender-male")
+	WebElement maleCircle;
+	
+	@FindBy(id = "gender-female")
+	WebElement femaleCircle;
+	
+	@FindBy(name = "FirstName")
+	WebElement firstNameField;
+	
+	@FindBy(name = "LastName")
+	WebElement lastNameField;
+	
+	@FindBy(name = "DateOfBirthDay")
+	WebElement DayDropDown;
+	
+	@FindBy(name = "DateOfBirthMonth")
+	WebElement MonthDropDown;
+	
+	@FindBy(name = "DateOfBirthYear")
+	WebElement yearDropDown;
+	
+	@FindBy(name = "Email")
+	WebElement emailField;
+	
+	@FindBy(xpath = "//strong[normalize-space()='Company Details']")
+	WebElement companyDetailsText;
+	
+	@FindBy(name = "Company")
+	WebElement companyField;
+	
+	@FindBy(xpath = "//strong[normalize-space()='Options']")
+	WebElement optionsText;
+	
+	@FindBy(xpath = "//strong[normalize-space()='Your Password']")
+	WebElement yourPasswordText;
+	
+	@FindBy(name = "Password")
+	WebElement passwordField;
+	
+	@FindBy(name = "ConfirmPassword")
+	WebElement cnfrmPassword;
+	
+	@FindBy(name = "register-button")
+	WebElement registerBtn;
